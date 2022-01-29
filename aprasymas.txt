@@ -1,0 +1,27 @@
+This mods adds option to play as machine empire for custom races available in mod United Sci-Fi Races. It adds 24 robotic/cyborg races to Machine section. The mod requires [url=http://steamcommunity.com/sharedfiles/filedetails/?id=814332008] United Sci-Fi races [/url] and SD DLC.
+
+It is made as a patch since it alters ...common\species_classes00_species_classes.txt. Unfortenatly, this is the only way I easely found to make work mechanics of SD for custom races.
+
+In case you think that it is more organic than robotic you can always select the same portrait from base Sci-Fi races sections. To create machine empire you must select portrait from section Machine.
+
+Following races included: 
+• Doctor Who: cybermen, daleks;
+• Halo: huragok, Cortana, prometheans;
+• Mass Effect: EDI, geths, reapers, collectors, remnants;
+• Star Trek: borgs;
+• Star Wars: robots;
+• Warhammer 40,000: necrons;
+• Other: terminators, cylons from Battlestar Galactica;
+• Special Stellaris races: 2 versions of The Contingency and variations of robots.
+*Fantasy: robotic 2 races 
+
+Only default + extended robots are randomised while other sci-fi specific robots will not be randomly spawned /generated.
+		
+[h1] Please check out my mods:[/h1]
+• [url=http://steamcommunity.com/sharedfiles/filedetails/?id=814332008] United Sci-Fi races (200+ races) [/url] 
+• [url=http://steamcommunity.com/sharedfiles/filedetails/?id=850721710] United traits (70+ traits) [/url]
+• [url=http://steamcommunity.com/sharedfiles/filedetails/?id=873063455] Extended Vanilla Clothes (1100+ clothes)[/url]
+• [url=http://steamcommunity.com/sharedfiles/filedetails/?id=1142647596] United Sci-Fi: Robots (includes extended SD portraits) [/url]
+• [url=http://steamcommunity.com/sharedfiles/filedetails/?id=814854383] United Flags (various Sci-Fi and other flag collection)[/url]
+• [url=http://steamcommunity.com/sharedfiles/filedetails/?id=1588415009] United Small Tweaks (minor changes for gameplay)[/url]
+• [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1766559290] Better map - significantly better display of empires in the map.[/url]

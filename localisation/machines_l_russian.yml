@@ -1,0 +1,38 @@
+﻿l_russian:
+
+ ####################################
+ # Species Classes
+ ####################################
+MACHINE2:0 "Machines (2)"
+ MACHINE2_desc:1 "Machine"
+ MACHINE2_plural:0 "Machines"
+ MACHINE2_insult_01:0 "meat"
+ MACHINE2_insult_plural_01:0 "meat"
+ MACHINE2_compliment_01:0 "sphinx"
+ MACHINE2_compliment_plural_01:0 "sphinxes"
+ MACHINE2_spawn:0 "cub"
+ MACHINE2_spawn_plural:0 "cubs"
+ MACHINE2_sound_01:0 "growling"
+ MACHINE2_sound_02:0 "grunting"
+ MACHINE2_sound_03:0 "yapping"
+ MACHINE2_sound_04:0 "yowling"
+ MACHINE2_sound_05:0 "mewling"
+ MACHINE2_organ:0 "stomach"
+ MACHINE2_mouth:0 "mouth" 
+ 
+MACHINE3:0 "Machines (3)"
+ MACHINE3_desc:1 "Machine"
+ MACHINE3_plural:0 "Machines"
+ MACHINE3_insult_01:0 "meat"
+ MACHINE3_insult_plural_01:0 "meat"
+ MACHINE3_compliment_01:0 "sphinx"
+ MACHINE3_compliment_plural_01:0 "sphinxes"
+ MACHINE3_spawn:0 "cub"
+ MACHINE3_spawn_plural:0 "cubs"
+ MACHINE3_sound_01:0 "growling"
+ MACHINE3_sound_02:0 "grunting"
+ MACHINE3_sound_03:0 "yapping"
+ MACHINE3_sound_04:0 "yowling"
+ MACHINE3_sound_05:0 "mewling"
+ MACHINE3_organ:0 "stomach"
+ MACHINE3_mouth:0 "mouth" 

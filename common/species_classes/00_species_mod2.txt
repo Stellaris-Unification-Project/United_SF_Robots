@@ -1,0 +1,137 @@
+MACHINE2 = {
+	archetype = MACHINE
+
+	playable = { host_has_dlc = "Synthetic Dawn Story Pack" }
+	randomized = {
+		host_has_dlc = "Synthetic Dawn Story Pack"
+		# The create_species effect can't properly take the possible trigger below into account.
+		# Work around this by disabling this class for species randomization after game start.
+		NOT = { has_global_flag = game_started }
+	}
+	possible = { authority = { OR = { value = auth_machine_intelligence text = SPECIES_CLASS_MUST_USE_MACHINE_INTELLIGENCE } } }
+	possible_secondary = { always = no text = SECONDARY_SPECIES_CLASS_INVALID }
+
+	robotic = yes
+	gender = no
+	use_climate_preference = no
+	portrait_modding = yes
+
+	leader_age_min = 2
+	leader_age_max = 10
+
+	custom_portraits = {
+		randomized = {
+			AND = {
+				host_has_dlc = "Synthetic Dawn Story Pack"
+				has_lithoids = yes
+			}
+		}
+		playable = {
+			AND = {
+				host_has_dlc = "Synthetic Dawn Story Pack"
+				has_lithoids = yes
+			}
+		}
+		portraits = {
+			"lith_machine"
+			#"lith_machine_red" - to be added
+		}
+	}	
+	
+	custom_portraits = {
+		randomized = {
+			host_has_dlc = "Synthetic Dawn Story Pack"
+			# The create_species effect can't properly take the possible trigger below into account.
+			# Work around this by disabling this class for species randomization after game start.
+			NOT = { has_global_flag = game_started }
+		}
+		playable = { host_has_dlc = "Synthetic Dawn Story Pack" }
+		portraits = {
+	
+
+########Special game races#### additional races are not randomised
+	    "SP13_ai_1"
+		"SP13_ai_2"
+
+####### Terminator #########
+		"MI26_terminator"
+		
+#########ME universe####
+		"ME25_edi"
+		"ME06_geth"
+		"ME09_reaper"
+		"ME17_collector"
+		"ME22_remnant"
+		
+#########ST universe####
+		"ST16_borg"
+		
+########Doctor Who######
+		"DH02_cyberman"
+		"DH03_dalek"
+		
+########Warhammer 40,000######		
+		"WH10_necron"
+		
+########Star Wars######	
+		"SW18_robot"
+		
+########Halo######				
+		"HA02_huragok"
+		"HA14_promethean"
+		"HA17_cortana"
+		}
+	}
+
+
+
+	#custom_portraits = { # use custom_portraits instead of portraits so we can put them after the custom_portraits above
+	#	randomized = {
+	#		host_has_dlc = "Synthetic Dawn Story Pack"
+	#	}
+	#	playable = { host_has_dlc = "Synthetic Dawn Story Pack" }
+	#	portraits = {
+	#		"default_robot"
+	#	}
+	#}
+
+	non_randomized_portraits = {
+########Special game races#### additional races are not randomised
+	    "SP13_ai_1"
+		"SP13_ai_2"
+
+####### Terminator #########
+		"MI26_terminator"
+		
+#########ME universe####
+		"ME25_edi"
+		"ME06_geth"
+		"ME09_reaper"
+		"ME17_collector"
+		"ME22_remnant"
+		
+#########ST universe####
+		"ST16_borg"
+		
+########Doctor Who######
+		"DH02_cyberman"
+		"DH03_dalek"
+		
+########Warhammer 40,000######		
+		"WH10_necron"
+		
+########Star Wars######	
+		"SW18_robot"
+		
+########Halo######				
+		"HA02_huragok"
+		"HA14_promethean"
+		"HA17_cortana"
+    }	
+	
+	
+	graphical_culture = mammalian_01
+	move_pop_sound_effect = "robot_pops_move"
+
+	resources = {}
+}

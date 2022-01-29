@@ -1,0 +1,71 @@
+portraits = {
+
+	sd_hum_robot_r = {
+		entity = "portrait_humanoid_synthetic_dawn_01_entity"	clothes_selector = "no_texture"	hair_selector = "no_texture"	greeting_sound = "robot_human_greetings"
+		character_textures = {
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_humanoid_4_2r.dds" #juodas/kovinis
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_humanoid_1_2r.dds" #rusvas
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_humanoid_2_2r.dds" #oranzinis
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_humanoid_3_2r.dds" #raudonas
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_humanoid_5_2r.dds" #sv. melynas
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_humanoid_6_2r.dds" #tm. melynas
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_humanoid_11_2r.dds" #geltonas
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_humanoid_7_2r.dds" #zalsas
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_humanoid_8_2r.dds" #zalias
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_humanoid_9_2r.dds" #violetinis
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_humanoid_10_2r.dds" #ruzavas
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_humanoid_12_2r.dds" 
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_humanoid_13_2r.dds" 
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_humanoid_14_2r.dds" 
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_humanoid_15_2r.dds" 
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_humanoid_16_2r.dds" 
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_humanoid_17_2r.dds" 
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_humanoid_18_2r.dds" 
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_humanoid_19_2r.dds" 
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_humanoid_20_2r.dds" 
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_humanoid_21_2r.dds" 
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_humanoid_22_2r.dds" 
+		}
+	}
+}
+
+portrait_groups = {
+	sd01_hum_red = {
+		default = sd_hum_robot_r		 
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				portraits = {
+					sd_hum_robot_r 
+				}
+			}
+		}
+
+		#leader scope 
+		ruler = {
+				add = {
+				portraits = {
+					sd_hum_robot_r 
+				}
+			}
+		
+		}
+		#species scope
+		species = {
+			set = {
+				portraits = {
+					sd_hum_robot_r
+				}
+			}
+		}		
+		#pop scope
+		pop = {
+			add = {
+				portraits = {
+					sd_hum_robot_r
+				}
+			}
+		}
+	}
+}
+		
+	

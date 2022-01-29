@@ -1,0 +1,34 @@
+
+MACHINE2 = {
+	M1_Terminators = {
+		name = Terminator
+		plural = Terminators
+		home_planet = "Machine world"
+		home_system = "01"
+		name_list = "MACHINE2"
+	}
+	M1_AI = {
+		name = "AI"
+		plural = "AI"
+		home_planet = "Core"
+		home_system = "Core"
+		name_list = "MACHINE3"
+	}
+}
+
+MACHINE3 = {
+	M1_Terminators = {
+		name = Terminator
+		plural = Terminators
+		home_planet = "Machine world"
+		home_system = "01"
+		name_list = "MACHINE2"
+	}
+	M1_AI = {
+		name = "AI"
+		plural = "AI"
+		home_planet = "Core"
+		home_system = "Core"
+		name_list = "MACHINE3"
+	}	
+}

@@ -1,0 +1,79 @@
+############################################################## 
+#	greeting_sound ="human_female_greetings_03" / human_male_greetings_03
+###	PORTRAITS SETTINGS
+###
+### Which portraits are used is set in 
+### common\species_classes\00_species_classes.txt
+###
+###	This file configures how portraits and planet backgrounds are built.
+###	Default position orientation is lower left.
+##############################################################
+
+
+
+portraits = {
+
+
+	sd_pla_robot_r = {
+		entity = "portrait_plantoid_synthetic_dawn_01_entity"	clothes_selector = "no_texture"	hair_selector = "no_texture"	greeting_sound = "robot_plantoid_greetings"
+		character_textures = {
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_plantoid_1_2r.dds"
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_plantoid_2_2r.dds"
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_plantoid_3_2r.dds"
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_plantoid_4_2r.dds"
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_plantoid_5_2r.dds"
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_plantoid_6_2r.dds"
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_plantoid_7_2r.dds"
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_plantoid_8_2r.dds"
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_plantoid_9_2r.dds"
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_plantoid_10_2r.dds"
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_plantoid_11_2r.dds"
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_plantoid_12_2r.dds"
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_plantoid_13_2r.dds"
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_plantoid_14_2r.dds"
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_plantoid_15_2r.dds"
+	
+		}
+	}
+}
+
+portrait_groups = {
+	sd08_pla_red= {
+		default = sd_pla_robot_r 		 
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				portraits = {
+					sd_pla_robot_r  
+				}
+			}
+		}
+
+		#leader scope 
+		ruler = {
+				add = {
+				portraits = {
+					sd_pla_robot_r  
+				}
+			}
+		
+		}
+		#species scope
+		species = {
+			set = {
+				portraits = {
+					sd_pla_robot_r 
+				}
+			}
+		}		
+		#pop scope
+		pop = {
+			add = {
+				portraits = {
+					sd_pla_robot_r 
+				}
+			}
+		}
+	}
+}
+		
+	

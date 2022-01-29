@@ -1,0 +1,78 @@
+############################################################## 
+#	greeting_sound ="human_female_greetings_03" / human_male_greetings_03
+###	PORTRAITS SETTINGS
+###
+### Which portraits are used is set in 
+### common\species_classes\00_species_classes.txt
+###
+###	This file configures how portraits and planet backgrounds are built.
+###	Default position orientation is lower left.
+##############################################################
+
+
+
+portraits = {
+
+		# Arthropoid
+	sd_art_robot_r = {
+		entity = "portrait_arthropoid_synthetic_dawn_01_entity"	clothes_selector = "no_texture"	hair_selector = "no_texture"	greeting_sound = "robot_arthopoid_greetings"
+		character_textures = {
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_arthropoid_1_2r.dds"
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_arthropoid_2_2r.dds" #oranzinis
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_arthropoid_4_2r.dds" #pilksvas
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_arthropoid_3_2r.dds" #zalias
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_arthropoid_5_2r.dds" #labai geltonas
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_arthropoid_6_2r.dds" #labai zalias
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_arthropoid_7_2r.dds" #elektrinis
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_arthropoid_8_2r.dds" #zydras
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_arthropoid_9_2r.dds" #lab. zydras
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_arthropoid_10_2r.dds" #melynas
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_arthropoid_11_2r.dds" #violetinis
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_arthropoid_12_2r.dds" #ruzavas
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_arthropoid_13_2r.dds" #ruzavas
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_arthropoid_14_2r.dds" #rausvas
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_arthropoid_15_2r.dds" #oranzinis
+		}
+	}
+}
+
+portrait_groups = {
+	sd05_art_red= {
+		default = sd_art_robot_r		 
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				portraits = {
+					sd_art_robot_r 
+				}
+			}
+		}
+
+		#leader scope 
+		ruler = {
+				add = {
+				portraits = {
+					sd_art_robot_r 
+				}
+			}
+		
+		}
+		#species scope
+		species = {
+			set = {
+				portraits = {
+					sd_art_robot_r
+				}
+			}
+		}		
+		#pop scope
+		pop = {
+			add = {
+				portraits = {
+					sd_art_robot_r
+				}
+			}
+		}
+	}
+}
+		
+	

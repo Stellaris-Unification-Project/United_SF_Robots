@@ -1,0 +1,194 @@
+##############################################################
+###	PORTRAITS SETTINGS
+###
+### Which portraits are used is set in 
+### common\species_classes\00_species_classes.txt
+###
+###	This file configures how portraits and planet backgrounds are built.
+###	Default position orientation is lower left.
+##############################################################
+
+portraits = {						
+					
+	
+
+	#default robots
+	#"gfx/models/portraits/AI/robot_blue.dds"
+	#"gfx/models/portraits/AI/robot_green.dds"
+	#Alien_AI_red.dds - red
+	
+#entities to be updated	
+#Itrinti tuos kur virsuje iskelus atskirai
+######################################
+
+#already defined entities in file C:\Program Files (x86)\Steam\steamapps\common\Stellaris\gfx\models\portraits\AI _ai_portrait_entities.asset
+#portrait_ai_01_entity 
+#portrait_robot_01_entity 
+#portrait_robot_02_entity
+#portrait_robot_03_entity
+#AI_background_details_entity
+	
+	SP_robot04	= {	entity = "portrait_robot_01_entity" clothes_selector = "no_texture" hair_selector = "no_texture" 
+					greeting_sound = "event_ai_started" 
+					character_textures = {
+						"gfx/models/portraits/AI/Alien_AI_red.dds"	#default robot 
+						"gfx/models/portraits/Special/robot/Alien_AI_red1.dds"
+						"gfx/models/portraits/Special/robot/Alien_AI_red12.dds"	
+						#other red
+						"gfx/models/portraits/Special/robot/robot_red.dds"
+						"gfx/models/portraits/Special/robot/robot_red2.dds"
+						"gfx/models/portraits/Special/robot/robot_red3.dds"
+						"gfx/models/portraits/Special/robot/robot_red4.dds"
+						"gfx/models/portraits/Special/robot/robot_red5.dds"
+						"gfx/models/portraits/Special/robot/robot_red6.dds"
+						"gfx/models/portraits/Special/robot/robot_red7.dds"								
+					}
+				}
+}
+
+
+#defining robot textures end here;
+					
+portrait_groups = {
+		SP04_robot = {
+		default = SP_robot04
+		game_setup = { 
+			add = {
+				trigger = {
+					ruler = { gender = male }
+				}
+				portraits = {
+					SP_robot04					
+				}
+			}
+			add = {
+				trigger = {
+					ruler = { gender = female }
+				}
+				portraits = {
+					SP_robot04					
+				}
+			}
+		}		
+		
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				portraits = {
+					SP_robot04
+					
+				}
+			}
+		}		
+		
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				portraits = {
+					SP_robot04	
+				}
+			}
+		}
+		
+		#leader scope
+		leader = { #scientists, generals, admirals, governor
+			add = {
+				trigger = {
+					gender = female
+					leader_class = scientist
+				}
+				portraits = {
+					SP_robot04				
+					
+				}
+			}
+			add = {
+				trigger = {
+					gender = male
+					leader_class = scientist
+				}
+				portraits = {
+					SP_robot04			
+				}
+			}
+			add = {
+				trigger = {
+					gender = female
+					leader_class = general
+				}
+				portraits = {
+					SP_robot04				
+					
+				}
+			}
+			add = {
+				trigger = {
+					gender = male
+					leader_class = general
+				}
+				portraits = {
+					SP_robot04			
+				}
+			}
+			add = {
+				trigger = {
+					gender = female
+					leader_class = admiral
+				}
+				portraits = {
+					SP_robot04				
+					
+				}
+			}
+			add = {
+				trigger = {
+					gender = male
+					leader_class = admiral
+				}
+				portraits = {
+					SP_robot04 			
+				}
+			}
+			add = {
+				trigger = {
+					gender = female
+					leader_class = governor
+				}
+				portraits = {
+					SP_robot04			
+					
+				}
+			}
+			add = {
+				trigger = {
+					gender = male
+					leader_class = governor
+				}
+				portraits = {
+					SP_robot04		
+				}
+			}			
+		}
+
+			
+		#leader scope 
+		ruler = {
+			add = {
+				trigger = {
+					gender = female
+				}
+				portraits = {
+					SP_robot04				
+				}
+			}
+			add = {
+				trigger = {
+					gender = male
+				}
+				portraits = {
+					SP_robot04				
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,66 @@
+	
+	
+portraits = {	
+		sd_avi_robot_r = {
+		entity = "portrait_avian_synthetic_dawn_01_entity"	clothes_selector = "no_texture"	hair_selector = "no_texture"	greeting_sound = "robot_avian_greetings"
+		character_textures = {
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_avian_1_2r.dds"
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_avian_2_2r.dds"
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_avian_3_2r.dds"
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_avian_4_2r.dds"
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_avian_5_2r.dds"
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_avian_6_2r.dds"
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_avian_7_2r.dds"
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_avian_8_2r.dds"
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_avian_9_2r.dds"
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_avian_10_2r.dds"
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_avian_11_2r.dds"
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_avian_12_2r.dds"
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_avian_13_2r.dds"
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_avian_14_2r.dds"
+			"gfx/models/portraits/synthetic_dawn/synthetic_dawn_portrait_avian_15_2r.dds"
+			
+		}
+	}
+}
+
+portrait_groups = {
+	sd04_avi_red = {
+		default = sd_avi_robot_r		 
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				portraits = {
+					sd_avi_robot_r 
+				}
+			}
+		}
+
+		#leader scope 
+		ruler = {
+				add = {
+				portraits = {
+					sd_avi_robot_r 
+				}
+			}
+		
+		}
+		#species scope
+		species = {
+			set = {
+				portraits = {
+					sd_avi_robot_r
+				}
+			}
+		}		
+		#pop scope
+		pop = {
+			add = {
+				portraits = {
+					sd_avi_robot_r
+				}
+			}
+		}
+	}
+}
+		
+	

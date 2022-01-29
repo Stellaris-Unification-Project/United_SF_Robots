@@ -1,0 +1,191 @@
+MACHINE = {
+	archetype = MACHINE
+
+	playable = { host_has_dlc = "Synthetic Dawn Story Pack" }
+	randomized = {
+		host_has_dlc = "Synthetic Dawn Story Pack"
+		# The create_species effect can't properly take the possible trigger below into account.
+		# Work around this by disabling this class for species randomization after game start.
+		NOT = { has_global_flag = game_started }
+	}
+	possible = { authority = { OR = { value = auth_machine_intelligence text = SPECIES_CLASS_MUST_USE_MACHINE_INTELLIGENCE } } }
+	possible_secondary = { always = no text = SECONDARY_SPECIES_CLASS_INVALID }
+
+	robotic = yes
+	gender = no
+	use_climate_preference = no
+	portrait_modding = yes
+
+	leader_age_min = 2
+	leader_age_max = 10
+
+	custom_portraits = {
+		randomized = {
+			host_has_dlc = "Synthetic Dawn Story Pack"
+			# The create_species effect can't properly take the possible trigger below into account.
+			# Work around this by disabling this class for species randomization after game start.
+			NOT = { has_global_flag = game_started }
+		}
+		playable = { host_has_dlc = "Synthetic Dawn Story Pack" }
+		portraits = {
+		"sd_hum_robot"
+		"sd01_hum_red"		
+		"sd_mam_robot"
+		"sd02_mam_red"
+	
+		"sd_rep_robot"
+		"sd03_rep_red"
+		
+		"sd_avi_robot"
+		"sd04_avi_red"
+		
+		"sd_art_robot"
+		"sd05_art_red"
+		
+		"sd_mol_robot"
+		"sd06_mol_red"
+		
+		"sd_fun_robot"
+		"sd07_fun_red"
+		
+		"sd_pla_robot"
+		"sd08_pla_red"
+
+		"SP01_robot" #blue eye
+		"SP04_robot" #red eye
+		
+		
+########Special game races#### additional races are not randomised
+	    "SP13_ai_1"
+		"SP13_ai_2"
+
+####### Terminator #########
+		"MI26_terminator"
+		
+#########ME universe####
+		"ME25_edi"
+		"ME06_geth"
+		"ME09_reaper"
+		"ME17_collector"
+		"ME22_remnant"
+		
+#########ST universe####
+		"ST16_borg"
+		
+########Doctor Who######
+		"DH02_cyberman"
+		"DH03_dalek"
+		
+########Warhammer 40,000######		
+		"WH10_necron"
+		
+########Star Wars######	
+		"SW18_robot"
+		
+########Halo######				
+		"HA02_huragok"
+		"HA14_promethean"
+		"HA17_cortana"
+
+		
+########Battlestar Galactica		
+		"MI03_cylon" 
+		"SP10_robot" #orange eye
+		"SP02_robot" #purple eye
+		"SP03_robot" #yellow eye
+		"SP05_robot" #green eye
+		"SP06_robot" #dark blue eye
+		"SP11_robot" #dark purple eye
+		#various robots
+		"SP07_robot" #black various 
+		"SP08_robot" #grey various
+		"SP09_robot" #white various		
+
+		}
+	}
+
+	custom_portraits = {
+		randomized = {
+			AND = {
+				host_has_dlc = "Synthetic Dawn Story Pack"
+				has_lithoids = yes
+			}
+		}
+		playable = {
+			AND = {
+				host_has_dlc = "Synthetic Dawn Story Pack"
+				has_lithoids = yes
+			}
+		}
+		portraits = {
+			"lith_machine"
+		}
+	}
+
+	custom_portraits = { # use custom_portraits instead of portraits so we can put them after the custom_portraits above
+		randomized = {
+			host_has_dlc = "Synthetic Dawn Story Pack"
+		}
+		playable = { host_has_dlc = "Synthetic Dawn Story Pack" }
+		portraits = {
+			"default_robot"
+		}
+	}
+	
+	non_randomized_portraits = {
+########Battlestar Galactica		
+		
+########Special game races#### additional races are not randomised
+	    "SP13_ai_1"
+		"SP13_ai_2"
+
+####### Terminator #########
+		"MI26_terminator"
+		
+#########ME universe####
+		"ME25_edi"
+		"ME06_geth"
+		"ME09_reaper"
+		"ME17_collector"
+		"ME22_remnant"
+		
+#########ST universe####
+		"ST16_borg"
+		
+########Doctor Who######
+		"DH02_cyberman"
+		"DH03_dalek"
+		
+########Warhammer 40,000######		
+		"WH10_necron"
+		
+########Star Wars######	
+		"SW18_robot"
+		
+########Halo######				
+		"HA02_huragok"
+		"HA14_promethean"
+		"HA17_cortana"
+
+		
+########Battlestar Galactica		
+		"MI03_cylon"  
+	
+		"SP10_robot" #orange eye
+		"SP02_robot" #purple eye
+		"SP03_robot" #yellow eye
+		"SP05_robot" #green eye
+		"SP06_robot" #dark blue eye
+		"SP11_robot" #dark purple eye
+		#various robots
+		"SP07_robot" #black various 
+		"SP08_robot" #grey various
+		"SP09_robot" #white various
+    }
+	
+
+	graphical_culture = mammalian_01
+	move_pop_sound_effect = "robot_pops_move"
+
+	resources = {}
+}
